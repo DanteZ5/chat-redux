@@ -4,10 +4,31 @@ body {
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  ul {
+  list-style-type: none;
+  }
+  h3 {
+    font-size: 18px;
+    color: #000;
+  }
 }
 
+.useless {
+  flex: 1 1 5%;
+  background-color: #BBB;
+}
+.channel-list {
+  flex: 1 1 25%;
+  padding: 40px;
+  background-color: #EEE;
+  hr {
+    border-top: 1px solid #000;
+  }
+}
 .message-list {
-  margin: 40px;
+  flex: 1 1 70%;
+  padding: 40px;
   .message {
     padding: 5px;
     h4 {

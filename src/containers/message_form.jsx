@@ -21,9 +21,9 @@ class MessageForm extends Component {
     // console.log(this.props.selectedChannel);
     // console.log(this.props.currentUser);
     // console.log(this.state.value);
+    event.preventDefault();
     this.props.createMessage(this.props.selectedChannel, this.props.currentUser, this.state.value);
     this.setState({value: ''});
-    event.preventDefault();
   }
 
   render() {
